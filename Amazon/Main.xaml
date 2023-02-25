@@ -1,0 +1,183 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1175,2026" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="517,1961" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="pdt" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="455,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Product Name" Title="Enter the Product name">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[pdt]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes an" sap:VirtualizedContainerService.HintSize="455,1571" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" ScopeGuid="6ecef44d-9643-4c3b-842a-8396aa96e961" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1354" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="x:String" Name="email" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'All'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="6ecef44d-9643-4c3b-842a-8396aa96e961" Text="[pdt]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="396, 90, 1048, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' aaname='Search Amazon.in' /&gt;" Guid="31554d46-34d8-4dd4-b1fd-f0516e4c7b64" ImageBase64="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" InformativeScreenshot="a409968bb15c639d0d85e9b25d4e6b78.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="355, 93, 19, 33" ElementType="Text" FriendlyName="'All'" FullSelectorArgument="&lt;webctrl id='nav-search-label-id' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-label-id' tag='SPAN' type='' class='nav-search-label nav-progressive-content' aaname='All' check:innerText='All' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAlCAYAAACpmHIGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAExSURBVEhL7ZIxS8NAFMf9krccQhG6HEIRXDJJ4ZYiDQUHHeygiwqtlIKkiCApRRAHydIlIFkOSqAESj7A30teotEcLmlxueEH794//Lh7L3tpmmJXWLkRKzdi5Uas3Mg/yNUSL4sl1KbaV/BOBa7f6RxcCfRmqpLXMcqDyxYYa2FYiIgIU4fh4pXOb+cMziSq5HXq8k2A4YHE7Z0EH/hIvrItyJO5C97X0rUPl7vw12XWWJ7AH3C4zwnVfQb5GBdZU/nqCZJJeB8x4lWM6EGCdT2oPG8oV7MTsP02xKEoaIMzB9MoyxvJ9a/W1SOZZyMpezSmzijUNclpZCQXN1m//LbOtzwco/NjgUS+4KMxQl2H98f6JXT7ZHGW13/d/tdCt4uVG7FyI1ZuxMqN7FCe4hPt73zZsGMM6AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Go'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6ecef44d-9643-4c3b-842a-8396aa96e961" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="1444, 89, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Go'" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' type='submit' class='nav-input nav-progressive-attribute' aaname='Go' check:text='Go' /&gt;" Guid="7f4186d8-8cec-41d4-899d-e3a2165a316b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAsCAYAAADM1FBZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVGhD7Zm9SgNBEIDzDlZiEQ70CS6iwcp0sQiCgtgcdiKCTyEIvoGtiJVY2/gG9hb6HnaOfIcLIQ6HeztwN8cGPrjszoT59u8CO1pbL8Q7riTGxZZsjDf/tI/k9/P9euGCp+tDWcxK3xLw8VBJtdj1LQHMiHsJZsO9BGSJvpAl+kKW0Ph8PJPbqwM5mu/JdGe7hmfa6NNyUjGT+Ho5rwudTEopSx36iCFW+422mEhQ1OXpfl0oI0+hb3cndTvwTBt9xBBrKWIiQYEUN59N5f2+UmOAPmKIJUeLaUOyBOucZcIoNwkEiCGWHKs9kiwRZiFmZNvkNJEswclDQax7rV+DWHLI1fpjSZYImzVmoxJLDrlafyxZAgaxnAaxsQdxxEIY2ZiXHW9tLaYNJhJs1NW/HRRMO/BMWzgEgJl4vjlWfy8WEwmgWAqluFDoKvQhG2KsRMwkAqxzZDh5GHngmbawByjcUsRc4r9YinQmAVYinUqAhUjnErAswh7SYprohQQggoDbmUglS/SFLNEX3EsM4pLF/XWX+4tH9Qp4+YtXBiBRyA8Nl/jMv6TcZQAAAABJRU5ErkJggg==" InformativeScreenshot="55a92d977bd3d610251a3706f32dd983.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='New column 2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='New column 3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='New column 4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='i' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="DebuggerApi" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6ecef44d-9643-4c3b-842a-8396aa96e961" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/s?k=laptop&amp;crid=1O2TZ2JPZS1YP&amp;sprefix=lapt%2Caps%2C540&amp;ref=nb_sb_noss_2" DesignTimeRectangle="1224, 283, 95, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl aria-label='Go to next page, page 2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Go to next page, page 2' tag='A' type='' class='s-pagination-item s-pagination-next s-pagination-button s-pagination-separator' aaname='Next' check:innerText='Next' /&gt;" Guid="9ee8bd92-4482-4660-8343-1a3ea82d101d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGMAAAA0CAYAAACesIbaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPISURBVHhe7ZzNSxtBGIfzH5T8Aepp2UMJXnop1YvJrUKgQlFEkIIgvVQpVMlBbyE9SCn01tpKUQ+1PSgeWrzY6sUIxUtrYv0I9SMRNana+IX667y7bnYTTWsscab1HXhIdmcnIe/D+85sYNYFbso019HREZjicnx8nEW+5voSjYIpLl9nZvBtfh7L8Th+ptN5hWTK1I/NTaR3dpgiQAIovvHVVUTn5rAkpFgZ42ws45IhMd+XlxGZncXh4WGWEJYhCRJiZYjVWIYkKEOoZG1vb2eyg2VIhOaQpZWVTLliGRKhmM+IVdbBwQHLkA2VKlr27u3tsQwVoPsQlqEIJGN3d9dYVbEMybAMhWAZCsEyFIJlKATLUAiWoRAsQyFYhoO7tbUoKSvDy56eM/uLjVQZC4PtuO1vxUA0py82jDZ/O4ZiOeeLzHWPB9fcbgMZQuTK6K83frjW9BYLzr65PtS569E75zh3IWLobXAjOH5W32nCk5MoKS2VJkS+DH8N7ug6WgYTdl8eGclEBBOTEcTXss/nJ4yuivPLIGQKkS+joQ8Tg63QKjrxyQpyroy1MJ41lEO7WS3KWjVu6OVofhcz+qZf34PmDWXGTj+vEZ/ZjemPoUxALer6zTF/QpYQJWQsiHIy0KSj6nEYSerLkTHRVQktMIz4ybjk+3ZoeggTxnEEvdbYqBin30NvZg4aQ1AEs5DMsJAhRBEZ4pgC6faha1K8z5JhlpqWNzHEEwmTz93ZmSPGNuo+VHl1NPZHHN/xlzLEyupqyhAYJaZGlBhDjBVsM6Aer1mibJ6cZAaRwtBDCtp9DCxZ5+yxhcqQIYJQSkY6FUbQK2p7MOSQEcELv8gM5wSfQ3I8JLKiE8GAKGcP7HJ2ERmyRBBqyRAkRztxywiEY8546hMZIzIhYV+XXkqY88vaGDoqKtExmhLvR9AmVmaNoqSZ1wm5uhvNmePfI1MEoZwMKjkfAnqWDMqOoUfV0ESAPF4fPPQqytnUybVaYMQUIzAnd3sSn3pVb1xPwbUlnc2VvukrmNTJBH7u+4zCMP4OESsoGSKIf0vGfw7LUAiWoRAsQyFYhkKwDIVgGQrBMhSCZSgEy1AIlqEI1mYZlqEAFHPaRsabZRSANlgurqywDNlYW4+TqRRvsJQNbcqnrEgLKbz1WBLOx1VsbW1hf3/fEEGNZVwCJIDiaz3IZVHI2BTHNFfQKspq/IijS4CWr7RqooxYW183MoJEnHqQy8bGBpjikxITNUmgOYJKE2WEUwQ1F91wMMWFsoCgVVNuNtgN+AX3mHkH45e3XQAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.in : laptop' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="363, 240, 1497, 5623" DesignTimeScaleFactor="1" FriendlyName="'if(window.mix_csa){wind…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' parentid='search' tag='DIV' /&gt;" Guid="b2f9f70a-4db9-431d-93c4-85842b271da7" InformativeScreenshot="dcc2ab119b748bd8e856fabf5055daf0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.in : laptop' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Product" WorkbookPath="test amazon.xlsx" />
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="338,239" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Email-Id" Title="Enter the mail">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Enjoy your data" DisplayName="Send SMTP Mail Message" Email="djr170113@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="338,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="soyhzgntaalsjqfj" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Amazon automation with UiPath" To="[email]">
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String">test amazon.xlsx</Literal>
+                  </InArgument>
+                </scg:List>
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="80ea1789f091933ec3b7349c27165e5e.jpg" Selector="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" Url="https://www.amazon.in/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
